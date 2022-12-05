@@ -1,6 +1,5 @@
 import os
 import re
-import numpy as np
 
 #read text file
 with open(os.path.dirname(__file__) + '/data.txt') as file:
