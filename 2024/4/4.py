@@ -47,7 +47,7 @@ def count_x_mas(lines):
     for i, line in enumerate(lines):
         if i in [0, len(lines) - 1]:
             continue
-        for j , char in enumerate(line):
+        for j, char in enumerate(line):
             if (j in [0, len(line) - 1] or
                 char != "A"):
                 continue
