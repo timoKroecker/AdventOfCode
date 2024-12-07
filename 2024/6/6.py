@@ -49,7 +49,7 @@ def get_guard_path(map):
     direction = UP
     obstacles = get_obstacles(map)
     visited = set()
-    while(is_in_map(guard, map)):
+    while is_in_map(guard, map):
         visited.add(guard)
         new_pos = (guard[0] + direction[0],
                    guard[1] + direction[1])
@@ -67,7 +67,7 @@ def get_loop_score(map):
     direction = UP
     obstacles = get_obstacles(map)
     visited = set()
-    while(is_in_map(guard, map)):
+    while is_in_map(guard, map):
         visited.add(guard + (direction,))
         new_pos = (guard[0] + direction[0],
                    guard[1] + direction[1])
