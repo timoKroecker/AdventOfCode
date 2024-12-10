@@ -102,7 +102,6 @@ if __name__ == "__main__":
     print("")
 
     print("6.2:")
-    print("Hold on for about ten minutes...")
     print(get_num_loops(lines))
     print("")
     end_time = time.time()
