@@ -64,10 +64,10 @@ def get_loop_score(map_shape, guard, obstacles):
     direction = UP
     visited = set()
     while is_in_map(guard, map_shape):
-        visited.add(guard + (direction,))
+        visited.add(guard + direction)
         new_pos = (guard[0] + direction[0],
                    guard[1] + direction[1])
-        if new_pos + (direction,) in visited:
+        if new_pos + direction in visited:
             return 1
         if new_pos in obstacles:
             direction = turn(direction)
