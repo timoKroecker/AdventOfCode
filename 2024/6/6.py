@@ -108,3 +108,4 @@ if __name__ == "__main__":
 
     elapsed_time = end_time - start_time
     print(f"Elapsed time: {elapsed_time:.6f} seconds")
+    # Elapsed time: 36.404954 seconds
